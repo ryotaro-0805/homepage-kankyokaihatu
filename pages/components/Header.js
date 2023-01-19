@@ -18,13 +18,13 @@ export default function Header() {
           <a className={styles.header_a} href="/components/about">
             <li>About</li>
           </a>
-          <a className={styles.header_a} href="/components/about">
+          <a className={styles.header_a} href="/components/product">
             <li>Products</li>
           </a>
-          <a className={styles.header_a} href="/components/about">
+          <a className={styles.header_a} href="/components/information">
             <li>Information</li>
           </a>
-          <a className={styles.header_a} href="/components/about">
+          <a className={styles.header_a} href="/components/contact">
             <li>Contact</li>
           </a>
         </ul>
