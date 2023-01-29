@@ -10,6 +10,9 @@ export default function Header() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+        <a href="/">
+          <h1 className='company_name'>環境開発株式会社</h1>
+        </a>
       <div className={styles.header_wrapper}>
         <ul className={styles.header_menu_ul}>
           <a className={styles.header_a} href="/">

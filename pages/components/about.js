@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Header from './Header'
 import Footer from './Footer'
+import about_pic from '../../public/img/about.jpg'
+import Image from 'next/image'
 
 export default function about() {
     return (
@@ -12,13 +14,24 @@ export default function about() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className={styles.about_container}>
-                <Header />
+            <Header />
+            <div className={`contentsMain ${styles.about_container}`}>
                 <main>
-                    <h3>about</h3>
+                    <div className={styles.about_container}>
+                        <div>
+                            <h2 className={styles.about_h2}>私たちが創造するのは</h2>
+                            <h2 className={styles.about_h2}>未来です</h2>
+                        </div>
+                        <div className={styles.example_wrapper}>
+                            <div className={styles.example}>example-1</div>
+                            <div className={styles.example}>example-2</div>
+                            <div className={styles.example}>example-3</div>
+                        </div>
+                    </div>
+                    <Image className={styles.about_image_pic} src={about_pic} alt='about-pic' />
                 </main>
-                <Footer />
             </div>
+                <Footer />
         </>
     )
 }

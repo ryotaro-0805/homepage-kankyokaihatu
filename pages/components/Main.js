@@ -12,12 +12,9 @@ export default function Main() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className={styles.main_container}>
-                <div className={styles.dummy_div}>dummy as a picture</div>
-                {/* <Image src={main_pic} /> */}
-                <div className={styles.main_wrapper}>
-                    <h2 className={styles.main_h2}>Main</h2>
-                </div>
+            <div className={`contentsMain ${styles.main_container}`}>
+                <Image className={styles.main_image_pic} src={main_pic} alt='top-pic' />
+                <h2 className={styles.main_h2}>明るい未来へあなたと共に</h2>
             </div>
         </>
     )

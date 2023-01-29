@@ -12,8 +12,8 @@ export default function information() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className={styles.information_container}>
-                <Header />
+            <Header />
+            <div className={`contentsMain ${styles.information_container}`}>
                 <main>
                     <h3>information</h3>
                 </main>

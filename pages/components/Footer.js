@@ -12,7 +12,7 @@ export default function Footer() {
       </Head>
       <footer className={styles.footer_container}>
 
-      <h2 className={styles.header_h2}>Footer</h2>
+      <h2 className={styles.footer_h2}>COPYRIGHT © 環境開発株式会社 ALL RIGHTS RESERVED.</h2>
       </footer>
     </>
   )

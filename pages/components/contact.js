@@ -12,8 +12,8 @@ export default function contact() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className={styles.contact_container}>
-                <Header />
+            <Header />
+            <div className={`contentsMain ${styles.contact_container}`}>
                 <main>
                     <h3>contact</h3>
                 </main>
