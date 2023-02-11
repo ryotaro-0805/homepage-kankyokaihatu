@@ -2,25 +2,3 @@
     margin: 0;
     padding: 0;
 }
-
-.company_name{
-    position: absolute;
-    color: #fff;
-    text-shadow: black 3px 3px 3px;
-    font-size: 1.2rem;
-    margin: 10px 0 0 20px;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.company_name:hover{
-    opacity: .7;
-}
-
-.contentsMain{
-    padding-top: 100px;
-}
-
-.contentsMain main{
-    min-height: 100vh;
-}
