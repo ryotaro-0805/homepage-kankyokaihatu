@@ -14,7 +14,7 @@ export default function Main() {
             </Head>
             <div className={`contentsMain ${styles.main_container}`}>
                 <Image className={styles.main_image_pic} src={main_pic} alt='top-pic' />
-                <h2 className={styles.main_h2}>明るい未来へあなたと共に</h2>
+                <h2 className={styles.main_h2}>明るい未来へあなたと共に<br />それが私たちです。</h2>
             </div>
         </>
     )
