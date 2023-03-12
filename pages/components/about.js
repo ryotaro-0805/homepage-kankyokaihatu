@@ -19,8 +19,8 @@ export default function about() {
                 <main>
                     <div className={styles.about_container}>
                         <div>
-                            <h2 className={styles.about_h2}>私たちが創造するのは</h2>
-                            <h2 className={styles.about_h2}>未来です</h2>
+                            <h2 className={`${styles.about_h2} animate__animated animate__fadeInDown`}>私たちが創造するのは</h2>
+                            <h2 className={`${styles.about_h2} animate__animated animate__fadeInDown`}>未来です</h2>
                         </div>
                         <div className={styles.example_wrapper}>
                             <div className={styles.example}>example-1</div>

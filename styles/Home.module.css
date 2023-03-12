@@ -4,7 +4,7 @@ header
 .header_wrapper {
     color: white;
     text-shadow: black 2px 2px 2px;
-    width: 90%;
+    width:  min(900px,90%);
     position: absolute;
     top: 50px;
     left: 50%;
@@ -70,11 +70,33 @@ header
     color: white;
     font-size: 1rem;
     transition: .2s;
+    position: relative;
 }
 
+.header_a:first-of-type{
+    letter-spacing: 3px;
+}
+
+.header_a::before{
+    content: '';
+    background-color: #FFF;
+    width: 100%;
+    height: 1.2px;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: .2s;
+}
+
+.header_a:hover::before{
+    transform: scale(1,1);
+}
+/* 
 .header_a:hover {
     opacity: .7;
-}
+} */
 
 /* 
 main
@@ -94,12 +116,13 @@ main
 
 .main_h2{
     width: 100%;
+    font-size: 2rem;
     text-align: center;
     color: #FFF;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     text-shadow: black 3px 3px 3px;
 }
 
@@ -111,6 +134,8 @@ about
 .about_container {
     /* background-color: rgb(231, 232, 243); */
     padding: 100px 0 100px 0;
+    width: 100%;
+    text-align: center;
 }
 
 .about_h2{
