@@ -11,29 +11,45 @@ export default function Header() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
-        <a href="/">
-          <h1 className={styles.company_name}><span class="material-symbols-outlined">
-public
-</span>環境開発株式会社</h1>
-        </a>
-      <div className={styles.header_wrapper}>
-        <ul className={styles.header_menu_ul}>
-          <a className={styles.header_a} href="/">
-            <li>Top</li>
+      <div className={styles.header_container}>
+        <h1 className={styles.company_name}>
+          <a href="/">
+            <span class="material-symbols-outlined">
+              public
+            </span>
+            環境開発株式会社
           </a>
-          <a className={styles.header_a} href="/components/about">
-            <li>About</li>
-          </a>
-          <a className={styles.header_a} href="/components/product">
-            <li>Products</li>
-          </a>
-          <a className={styles.header_a} href="/components/information">
-            <li>Information</li>
-          </a>
-          <a className={styles.header_a} href="/components/contact">
-            <li>Contact</li>
-          </a>
-        </ul>
+        </h1>
+        <div className={styles.menu_wrapper}>
+
+          <ul className={styles.header_menu_ul}>
+            <li>
+              <a className={styles.header_a} href="/">
+                Top
+              </a>
+            </li>
+            <li>
+              <a className={styles.header_a} href="/components/about">
+                About
+              </a>
+            </li>
+            <li>
+              <a className={styles.header_a} href="/components/product">
+                Products
+              </a>
+            </li>
+            <li>
+              <a className={styles.header_a} href="/components/information">
+                Information
+              </a>
+            </li>
+            <li>
+              <a className={styles.header_a} href="/components/contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   )
